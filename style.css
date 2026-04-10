@@ -184,12 +184,12 @@ button:hover {
   z-index: 99;
 }
 
-#telas {
+#telas, #conceptArts {
     position: relative;
     border-radius: 100px;
 }
 
-#telas button {
+#telas button, #conceptArts button {
     position: absolute;
     top: 45%;
 }
@@ -217,6 +217,23 @@ button:hover {
     width: 60%;
     height: auto;
 }
+
+.conceptSlides li {
+    list-style: none;
+    display: none;
+}
+
+.conceptSlides li.displaySlide {
+    display: block;
+    margin-left: -5vh;
+    animation: fade 1s;
+}
+
+.conceptSlides li.displaySlide img, #conceptArts img{
+    width: 60%;
+    height: auto;
+}
+
 
 
 @media(max-width: 1280px) {

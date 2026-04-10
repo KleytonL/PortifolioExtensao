@@ -42,20 +42,59 @@ function showSlide() {
 
 function nextSlide() {
     slideIndex++;
-
+    
     if(slideIndex >= slides.length) {
         slideIndex = 0;
     }
-
+    
     showSlide();
 }
 
 function prevSlide() {
     slideIndex--;
-
+    
     if(slideIndex < 0) {
         slideIndex = slides.length - 1;
     }
     
     showSlide(slideIndex);
+}
+
+//----------------------------------------------------------------------------------------------------
+const conceptSlides = document.querySelectorAll('.conceptSlides li')
+let conceptSlideIndex = 0;
+
+document.addEventListener("DOMContentLoaded", initConceptSlide);
+
+function initConceptSlide() {
+    if(conceptSlides.length > 0) {
+        conceptSlides[conceptSlideIndex].classList.add("displaySlide");
+    }
+}
+
+function showConceptSlide() {
+    conceptSlides.forEach(conceptSlide => {
+        conceptSlide.classList.remove("displaySlide");
+    });
+    initConceptSlide();
+}
+
+function nextConceptSlide() {
+    conceptSlideIndex++;
+
+    if(conceptSlideIndex >= conceptSlides.length) {
+        conceptSlideIndex = 0;
+    }
+
+    showConceptSlide();
+}
+
+function prevConceptSlide() {
+    conceptSlideIndex--;
+
+    if(conceptSlideIndex < 0) {
+        conceptSlideIndex = conceptSlides.length - 1;
+    }
+    
+    showConceptSlide(conceptSlideIndex);
 }
