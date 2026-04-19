@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="public/logoUniFIl.ico" type="image/x-icon">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Portifólio</title>
 </head>
 <body>
+
+    <div class="bg-enemies" aria-hidden="true"></div>
+
     <header>
         <div class="header-imagem">
-            <img src="public/logoUniFIl.svg" alt="">
+            <img src="public/logoUniFIl.svg" alt="Logo UniFil">
         </div>
 
         <div class="header-nav">
@@ -21,10 +24,10 @@
                     <li class="hideOnMobile nav-a"><a href="#comunidade">Comunidade</a></li>
                     <li class="hideOnMobile nav-a"><a href="#reflexao">Reflexão</a></li>
                     <li class="hideOnMobile nav-a"><a href="#membros">Integrantes</a></li>
-                    <li class="nav-menu" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    <li class="nav-menu" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
                 <ul id="sidebar">
-                    <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                     <li><a href="#introducao">Introdução</a></li>
                     <li><a href="#comunidade">Comunidade</a></li>
                     <li><a href="#reflexao">Reflexão</a></li>
@@ -34,98 +37,97 @@
         </div>
     </header>
 
+    <div id="hero">
+        <img src="public/sprites/HayatoLogo.svg" alt="Hayato: Training Ground">
+        <a href="https://github.com/KleytonL/ProjetoExtensao" target="_blank"><button>GitHub do Projeto &#10132;</button></a>
+    </div>
+
     <main>
         <div class="main-container">
-            <div id="logoDoJogo">
-                <img src="public/HayatoLogoEnlarged.svg" alt="">
-            </div>
-            <!--<a href="" target="_blank"><button>Jogar Agora &#10132</button></a>-->
-            <a href="https://github.com/KleytonL/ProjetoExtensao" target="_blank"><button>GitHub do Projeto &#10132</button></a>
-            <div id="introducao">
+
+            <div id="introducao" class="section-3d">
                 <h1>Introdução</h1>
-                <p><strong>Hayato: Training Ground</strong> é um projeto de extensão currícular que consiste em um jogo roguelite 2D de visão Top-Down (de cima para baixo), inspirado em jogos como "Vampire Survivor", "Undertale" e "Touhou". O principal objetivo do jogo consiste no protagonista sendo desafiado a escalar uma torre cheia de inimigos para ficar mais forte conforme alcança novos andares.
-                </p>
+                <p><strong>Hayato: Training Ground</strong> é um projeto de extensão currícular que consiste em um jogo roguelite 2D de visão Top-Down (de cima para baixo), inspirado em jogos como "Vampire Survivor", "Undertale" e "Touhou". O principal objetivo do jogo consiste no protagonista sendo desafiado a escalar uma torre cheia de inimigos para ficar mais forte conforme alcança novos andares.</p>
             </div>
 
-            <div id="acessarOutrasPaginas">
-                <a href="prototype.html"><button id="prototipoBtn">Prototipação &#10132</button></a>
-                <a href="documents.html"><button id="documentacaoBtn">Documentação &#10132</button></a>
+            <div id="acessarOutrasPaginas" class="section-3d">
+                <a href="prototype.html"><button id="prototipoBtn">Prototipação &#10132;</button></a>
+                <a href="documents.html"><button id="documentacaoBtn">Documentação &#10132;</button></a>
             </div>
-            
-            <div class="introProblema">
+
+            <div class="introProblema section-3d">
                 <h1>Introdução ao Problema</h1>
                 <p>Falta de interesse ou incentivo ao longo do curso, uma vez que diversos estudantes acabam se interessando na faculdade por alguns assuntos específicos, que muitas vezes demoram para serem abordados na grade curricular, podendo gerar fadiga e desmotivação do aluno com o curso.</p>
             </div>
 
-            <div class="resProblema">
+            <div class="resProblema section-3d">
                 <h1>Resolução do Problema</h1>
                 <p>Um jogo com temática popular que mostra que apesar da pressão e diversos assuntos que podem não ser do interesse direto do estudante, ainda é possível aprender e desenvolver aquilo que o motivou a entrar na faculdade logo no início.</p>
             </div>
 
-            <div id="comunidade">
+            <div id="comunidade" class="section-3d">
                 <h1>Comunidade</h1>
                 <p>O nosso público-alvo são as pessoas que fazem parte da comunidade de jogos, que estão em busca de uma experiência divertida, e estudantes de Universidades que possuem interesse na carreira de desenvolvimento de jogos. Visamos proporcionar com o nosso projeto, algo que os estudantes possam se inspirar para a carreira de desenvolvimento de jogos, estimulando a criatividade e proporcionando motivação enquanto desenvolvem suas habilidades ao longo do curso, independente dos desafios que serão encontrados.</p>
             </div>
 
-            <div id="reflexao">
+            <div id="reflexao" class="section-3d">
                 <h1>Reflexão</h1>
-                <p>Esperamos que o nosso projeto sirva como inspiração e modelo, tanto para aqueles que fazem parte da comunidade de jogos, quanto para estudantes na área que estejam enfrentando dificuldade em manter o desejo de continuar no curso. O jogo é um exemplo concreto que demonstra que podemos criar e projetar aquilo que sonhamos, por mais que não estejamos aprendendo sobre aquilo diretamente na faculdade.
-                </p>
-            </div>
-            
-            <div id="extensao">
-                <h1>O que é Extensão Curricular?</h1>
-                <p>De acordo com a Resolução nº 7, de 18 de Dezembro de 2018, do Conselho Nacional de Educação, a Extensão Currícular é uma complementação, onde os estudantes devem planejar e desenvolver um projeto cujo objetivo seja enriquecer a formação dos alunos com experiências práticas junto a interação com uma sociedade externa.
-                </p>
+                <p>Esperamos que o nosso projeto sirva como inspiração e modelo, tanto para aqueles que fazem parte da comunidade de jogos, quanto para estudantes na área que estejam enfrentando dificuldade em manter o desejo de continuar no curso. O jogo é um exemplo concreto que demonstra que podemos criar e projetar aquilo que sonhamos, por mais que não estejamos aprendendo sobre aquilo diretamente na faculdade.</p>
             </div>
 
-            <div class="integrantes">
+            <div id="extensao" class="section-3d">
+                <h1>O que é Extensão Curricular?</h1>
+                <p>De acordo com a Resolução nº 7, de 18 de Dezembro de 2018, do Conselho Nacional de Educação, a Extensão Currícular é uma complementação, onde os estudantes devem planejar e desenvolver um projeto cujo objetivo seja enriquecer a formação dos alunos com experiências práticas junto a interação com uma sociedade externa.</p>
+            </div>
+
+            <div class="integrantes section-3d">
                 <h1>Integrantes</h1>
                 <p>Somos a equipe <strong>Prisma</strong>, composta por estudantes da Universidade Filadélfia de Londrina (UniFil).</p>
             </div>
-            
-            <div id="logoDaEquipe">
-                <img src="public/TeamLogoEnlarged.png" alt="">
+
+            <div id="logoDaEquipe" class="section-3d">
+                <img src="public/TeamLogoEnlarged.png" alt="Logo da equipe Prisma">
             </div>
-            
-            <div id="membros">
+
+            <div id="membros" class="section-3d">
                 <div class="cards">
                     <h3>Fernando Bersellini</h3>
                     <p>Engenharia de Software</p>
-                    <img src="public/integrantes/fernando.jpeg" alt="">
-                    <a href="https://github.com/FernandoBersellini" target="_blank"><img src="public/github.svg">GitHub</a>
+                    <img src="public/integrantes/fernando.jpeg" alt="Fernando Bersellini">
+                    <a href="https://github.com/FernandoBersellini" target="_blank"><img src="public/github.svg" alt="">GitHub</a>
                 </div>
                 <div class="cards">
                     <h3>Guilherme Acioli</h3>
                     <p>Ciência da Computação</p>
-                    <img src="public/integrantes/guilherme.jpeg" alt="">
-                    <a href="https://github.com/GuilhermeAcioli" target="_blank"><img src="public/github.svg">GitHub</a>
+                    <img src="public/integrantes/guilherme.jpeg" alt="Guilherme Acioli">
+                    <a href="https://github.com/GuilhermeAcioli" target="_blank"><img src="public/github.svg" alt="">GitHub</a>
                 </div>
                 <div class="cards">
                     <h3>Kleyton Luiz</h3>
                     <p>Ciência da Computação</p>
-                    <img src="public/integrantes/kleyton.jpeg" alt="">
-                    <a href="https://github.com/KleytonL" target="_blank"><img src="public/github.svg">GitHub</a>
+                    <img src="public/integrantes/kleyton.jpeg" alt="Kleyton Luiz">
+                    <a href="https://github.com/KleytonL" target="_blank"><img src="public/github.svg" alt="">GitHub</a>
                 </div>
                 <div class="cards">
                     <h3>Matheus Cardoso</h3>
                     <p>Ciência da Computação</p>
-                    <img src="public/integrantes/integranteMtheus.jpeg" alt="">
-                    <a href="https://github.com/MathJoones" target="_blank"><img src="public/github.svg">GitHub</a>
+                    <img src="public/integrantes/integranteMtheus.jpeg" alt="Matheus Cardoso">
+                    <a href="https://github.com/MathJoones" target="_blank"><img src="public/github.svg" alt="">GitHub</a>
                 </div>
                 <div class="cards">
                     <h3>Vitor Kenji</h3>
                     <p>Ciência da Computação</p>
-                    <img src="public/integrantes/vitor.jpeg" alt="">
-                    <a href="https://github.com/vkenji1" target="_blank"><img src="public/github.svg">GitHub</a>
+                    <img src="public/integrantes/vitor.jpeg" alt="Vitor Kenji">
+                    <a href="https://github.com/vkenji1" target="_blank"><img src="public/github.svg" alt="">GitHub</a>
                 </div>
             </div>
 
         </div>
-        <button onclick="backToTop()" id="goBackBtn" title="Voltar ao Topo">&#8679</button>
+        <button onclick="backToTop()" id="goBackBtn" title="Voltar ao Topo">&#8679;</button>
     </main>
+
     <footer>
-        <img src="public/logoUniFIl2.svg" alt="">
+        <img src="public/logoUniFIl2.svg" alt="Logo UniFil">
     </footer>
 </body>
 </html>

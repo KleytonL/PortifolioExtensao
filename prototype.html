@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="public/logoUniFIl.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
     <title>Portifólio</title>
 </head>
 <body>
+
+    <div class="bg-enemies" aria-hidden="true"></div>
+
     <header>
         <div class="header-imagem">
-            <img src="public/logoUniFIl.svg" alt="">
+            <img src="public/logoUniFIl.svg" alt="Logo UniFil">
         </div>
-
         <div class="header-nav">
             <nav>
                 <ul id="navbar">
-                    <li class="nav-a"><a href="index.html">Voltar ao Início</a></li>
+                    <li class="nav-a"><a href="index.html">&#10094; Voltar ao Início</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,63 +27,67 @@
 
     <main>
         <div class="main-container">
-            
-            <div id="demo">
+
+            <div id="demo" class="section-3d">
                 <h1>Demonstração de Design e Interfaces</h1>
                 <p>Esta página contém todo o conteúdo relacionado a parte gráfica, funcional e artistica da nossa aplicação, voltada para o Projeto de Extensão.</p>
             </div>
 
-            <div id="telas">
+            <div id="telas" class="section-3d">
                 <h1>Telas</h1>
-                <ol class="slides">
-                    <li class="slide">
-                        <img src="public/prototype/main_menu.png">
-                    </li>
-                    <li class="slide">
-                        <img src="public/prototype/dev_room.png">
-                    </li>
-                    <li class="slide">
-                        <img src="public/prototype/hit_enemy.png">
-                    </li>
-                </ol>
-                <button class="btnPrev" onclick="prevSlide()">&#10094</button>
-                <button class="btnNext" onclick="nextSlide()">&#10095</button>
-            </div>
-            
-            <div id="prototipos">
-                <h1>Protótipos</h1>
-                <img src="public/prototype/HayatoRunning.gif">
+                <div class="slider-row">
+                    <button class="btnPrev" onclick="prevSlide()">&#10094;</button>
+                    <ol class="slides">
+                        <li class="slide">
+                            <img src="public/prototype/main_menu.png" alt="Menu principal">
+                        </li>
+                        <li class="slide">
+                            <img src="public/prototype/dev_room.png" alt="Sala de desenvolvimento">
+                        </li>
+                        <li class="slide">
+                            <img src="public/prototype/hit_enemy.png" alt="Combate com inimigo">
+                        </li>
+                    </ol>
+                    <button class="btnNext" onclick="nextSlide()">&#10095;</button>
+                </div>
             </div>
 
-            <div id="conceptArts">
+            <div id="prototipos" class="section-3d">
+                <h1>Protótipos</h1>
+                <img src="public/prototype/HayatoRunning.gif" alt="Hayato correndo - animação sprite">
+            </div>
+
+            <div id="conceptArts" class="section-3d">
                 <h1>Artes Conceituais</h1>
-                <ol class="conceptSlides">
-                    <li class="conceptSlide">
-                        <img src="public/concept/extensaoCapa.png">
-                    </li>
-                    <li class="conceptSlide">
-                        <img src="public/concept/HayatoWisp.png">
-                    </li>
-                    <li class="conceptSlide">
-                        <img src="public/concept/HayatoWispG2.png">
-                    </li>
-                    <li class="conceptSlide">
-                        <img src="public/concept/HayatoHandDemon.png">
-                    </li>
-                    <li class="conceptSlide">
-                        <img src="public/concept/HayatoNeuronMachine.png">
-                    </li>
-                </ol>
-                <button class="btnPrev" onclick="prevConceptSlide()">&#10094</button>
-                <button class="btnNext" onclick="nextConceptSlide()">&#10095</button>
+                <div class="slider-row">
+                    <button class="btnPrev" onclick="prevConceptSlide()">&#10094;</button>
+                    <ol class="conceptSlides">
+                        <li class="conceptSlide">
+                            <img src="public/concept/extensaoCapa.png" alt="Capa do projeto">
+                        </li>
+                        <li class="conceptSlide">
+                            <img src="public/concept/HayatoWisp.png" alt="Concept art Wisp">
+                        </li>
+                        <li class="conceptSlide">
+                            <img src="public/concept/HayatoWispG2.png" alt="Concept art Wisp G2">
+                        </li>
+                        <li class="conceptSlide">
+                            <img src="public/concept/HayatoHandDemon.png" alt="Concept art Hand Demon">
+                        </li>
+                        <li class="conceptSlide">
+                            <img src="public/concept/HayatoNeuronMachine.png" alt="Concept art Neuron Machine">
+                        </li>
+                    </ol>
+                    <button class="btnNext" onclick="nextConceptSlide()">&#10095;</button>
+                </div>
             </div>
 
         </div>
-        <button onclick="backToTop()" id="goBackBtn" title="Voltar ao Topo">&#8679</button>
+        <button onclick="backToTop()" id="goBackBtn" title="Voltar ao Topo">&#8679;</button>
     </main>
+
     <footer>
-        <img src="public/logoUniFIl2.svg" alt="">
-        <script src="script.js"></script>
+        <img src="public/logoUniFIl2.svg" alt="Logo UniFil">
     </footer>
 </body>
 </html>

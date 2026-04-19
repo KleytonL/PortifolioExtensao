@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="public/logoUniFIl.ico" type="image/x-icon">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Portifólio</title>
 </head>
 <body>
+
+    <div class="bg-enemies" aria-hidden="true"></div>
+
     <header>
         <div class="header-imagem">
-            <img src="public/logoUniFIl.svg" alt="">
+            <img src="public/logoUniFIl.svg" alt="Logo UniFil">
         </div>
-
         <div class="header-nav">
             <nav>
                 <ul id="navbar">
-                    <li class="nav-a"><a href="index.html">Voltar ao Início</a></li>
+                    <li class="nav-a"><a href="index.html">&#10094; Voltar ao Início</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,41 +28,39 @@
     <main>
         <div class="main-container">
 
-            <div id="documentacao">
+            <div id="documentacao" class="section-3d">
                 <h1>Documentação do Projeto</h1>
                 <p>Esta página contém toda a documentação criada para nossa aplicação, voltada para o Projeto de Extensão.</p>
             </div>
 
-            <div id="casoDeUso">
+            <div id="casoDeUso" class="section-3d">
                 <h1>Caso de Uso</h1>
-                <img src="public/documents/UseCaseDiagram2.png" alt="Documento Caso de Uso">
+                <img src="public/documents/casoUsoHayato.png" alt="Diagrama de Caso de Uso">
             </div>
-            
-            <div id="diagImplementacao">
+
+            <div id="diagImplementacao" class="section-3d">
                 <h1>Diagrama de Implementação</h1>
+                <p>Em desenvolvimento.</p>
             </div>
 
-            <div id="documentoVisao">
+            <div id="documentoVisao" class="section-3d">
                 <h1>Documento de Visão</h1>
+                <p>Em desenvolvimento.</p>
             </div>
 
-            <div id="workflow">
-                <h1>WorkFlow</h1>
-            </div>
-
-            <div id="mvp">
+            <div id="mvp" class="section-3d">
                 <h1>MVP (Produto Viável Mínimo)</h1>
-                <video controls width="70%">
+                <video controls>
                     <source src="public/documents/HayatoMVP.mp4" type="video/mp4">
                 </video>
             </div>
 
         </div>
-
-        <button onclick="backToTop()" id="goBackBtn" title="Voltar ao Topo">&#8679</button>
+        <button onclick="backToTop()" id="goBackBtn" title="Voltar ao Topo">&#8679;</button>
     </main>
+
     <footer>
-        <img src="public/logoUniFIl2.svg" alt="">
+        <img src="public/logoUniFIl2.svg" alt="Logo UniFil">
     </footer>
 </body>
 </html>
